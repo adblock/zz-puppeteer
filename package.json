@@ -1,0 +1,54 @@
+{
+  "name": "zz-puppeteer",
+  "puppeteer": {
+    "chromium_revision": "737027"
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon start-server.js"
+  },
+  "author": "penepn",
+  "dependencies": {
+    "ali-mysql-client": "^1.0.4",
+    "axios": "^0.19.1",
+    "config": "^3.0.1",
+    "crypto-js": "^4.0.0",
+    "dateformat": "^3.0.3",
+    "dingtalk-robot": "^1.0.3",
+    "exceljs": "^3.8.2",
+    "fs-extra": "^9.0.1",
+    "http-build-query": "^0.7.0",
+    "https": "^1.0.0",
+    "log4js": "^6.3.0",
+    "moment": "^2.26.0",
+    "mongodb": "^3.4.1",
+    "mysql": "^2.17.1",
+    "mysql2": "^2.1.0",
+    "node-xlsx": "^0.16.1",
+    "node-jsencrypt": "^1.0.0",
+    "nodemailer": "^6.4.6",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "puppeteer": "^3.0.4",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9",
+    "sequelize": "^6.3.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "lint-staged": "^8.1.0",
+    "nodemon": "^2.0.2"
+  },
+  "lint-staged": {
+    "*.{js,md}": [
+      "eslint",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
