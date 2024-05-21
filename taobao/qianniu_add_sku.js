@@ -383,8 +383,8 @@ const sleep = async(time=0) => {
     const args = process.argv.splice(2);
     let order_xlsx = args[0];
     if(args.length){
-        const account = '美好生活品质严选:小美';
-        const password = '2012j0518p';
+        const account = '';
+        const password = '';
         //(STEP 1)获取excel订单编号
         let obj = node_xlsx.parse(order_xlsx);
         let order_list = await saveExcel(obj);
